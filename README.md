@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+# Expense Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and intuitive web application to track your personal expenses and budget.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Track both expenses and income
+- View current balance
+- Categorize transactions
+- Search through transaction history
+- Responsive design for mobile and desktop
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14.0.0 or higher)
+- npm (v6.0.0 or higher)
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+```bash
+git clone https://github.com/your-username/ExpenseTracker.git
+cd ExpenseTracker
+```
 
-### `npm run build`
+2. Install dependencies
+```bash
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server
+```bash
+npm start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Open your browser and navigate to `http://localhost:3001`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Project Structure
 
-### `npm run eject`
+```
+ExpenseTracker/
+├── public/
+│   ├── favicon.ico
+│   ├── index.html
+│   └── manifest.json
+├── src/
+│   ├── components/
+│   │   ├── AddTransaction.js
+│   │   ├── OverviewComponent.js
+│   │   ├── Tracker.js
+│   │   ├── TransactionItem.js
+│   │   └── TransactionsContainer.js
+│   ├── App.css
+│   ├── App.js
+│   ├── App.test.js
+│   ├── index.css
+│   ├── index.js
+│   ├── globalStyles.js
+│   └── reportWebVitals.js
+├── package.json
+├── package-lock.json
+└── README.md
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Usage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Add a new transaction by entering the amount and details
+2. Select whether it's an expense or income
+3. Click "Add Transaction" to save it
+4. View your transactions list below
+5. Use the search box to filter transactions
+6. The balance, total expense, and total budget are displayed at the top
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technologies Used
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React.js
+- CSS/Styled Components
+- LocalStorage for data persistence
 
-## Learn More
+## Future Enhancements
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Data visualization with charts
+- Export transactions to CSV
+- Categories and tags for better organization
+- Monthly/yearly expense reports
+- Dark mode
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Contributing
 
-### Code Splitting
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
